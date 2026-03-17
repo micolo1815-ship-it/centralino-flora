@@ -1,0 +1,643 @@
+:root {
+    --Color_1_Seaweed: #2E4A1B;
+    --Color_1_Seaweed-dark: #294218;
+    --Color_2_Gum-Leaf: #A8D5BA;
+    --Color_2_Gum-Leaf-dark: #97bfa7;
+    --Color_3_Sidecar: #F4F0BB;
+    --Color_3_Sidecar-dark: #dbd8a8;
+    --Color_4_Highland: #738C59;
+    --Color_4_Highland-dark: #677e50;
+    --Color_5_Log-Cabin: #1A1E16;
+    --Color_5_Log-Cabin-dark: #171b13;
+    --Color_6_Amber: #FFC107;
+    --Color_6_Amber-dark: #e5ad06;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #ffb736;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+}
+  
+
+.navbar-shadow {
+    box-shadow: 0 4px 6px -1px rgba(35, 88, 61, 0.3), 0 2px 4px -1px rgba(243, 114, 157, 0.2)
+}
+
+@media (max-width: 518px) {
+    .title-hide {
+        display: none;
+    }
+}
+
+.text-seaweed {
+  color: var(--Color_1_Seaweed) !important; 
+}
+
+a.text-seaweed:hover, a.text-seaweed:focus {
+    color: var(--Color_1_Seaweed-dark) !important; 
+}
+
+.text-gum-leaf {
+  color: var(--Color_2_Gum-Leaf) !important; 
+}
+
+a.text-gum-leaf:hover, a.text-gum-leaf:focus {
+    color: var(--Color_2_Gum-Leaf-dark) !important; 
+}
+
+.text-sidecar {
+  color: var(--Color_3_Sidecar) !important; 
+}
+
+a.text-sidecar:hover, a.text-sidecar:focus {
+    color: var(--Color_3_Sidecar-dark) !important; 
+}
+
+.text-highland {
+  color: var(--Color_4_Highland) !important; 
+}
+
+a.text-highland:hover, a.text-highland:focus {
+    color: var(--Color_4_Highland-dark) !important; 
+}
+
+.text-log-cabin {
+  color: var(--Color_5_Log-Cabin) !important; 
+}
+
+a.text-log-cabin:hover, a.text-log-cabin:focus {
+    color: var(--Color_5_Log-Cabin-dark) !important; 
+}
+
+.cardimg-hover:hover {
+    transform: scale(1.075);
+}
+
+.text-sm-res {
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    .text-sm-res {
+        font-size: 20px;
+    }
+  }
+  
+
+.project-category {
+    font-style: italic;
+}
+
+.abbreviation {
+    font-weight: 400;
+}
+
+.italic-light {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.light-span span {
+    font-weight: 300;
+}
+
+.category-list {
+    font-weight: 500;
+}
+
+.tree-fact-list li{
+    font-weight: 300;
+}
+
+.tree-fact-list {
+    padding-left: 20px;
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: auto;
+}
+
+.post-featured-image {
+    width: 100%;
+    max-width: 800px;     
+    height: 450px;        
+    object-fit: cover;     
+    margin-bottom: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+/* INDEX CSS */
+
+.hero-section {
+    background-image: url('../images/Intro background/Narra x Acacia - edited.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+
+    z-index: -1;
+}
+
+.hero-text {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2e0046;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffb736;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.hero-sub {
+    font-size: 2rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    .hero-text {
+    font-size: 2.5rem;
+    }
+    .hero-sub {
+    font-size: 1.2rem;
+    }
+}
+
+.introduction-section {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.introduction-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    filter: blur(8px);
+}
+
+.background-blur {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../images/Intro background/FDT, courtyard.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    z-index: -1;
+}
+
+.background-blur::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+
+}
+
+.introduction-container {
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+.introduction-text {
+    color: #FFC107;
+}
+
+.introduction-sub {
+    font-size: 2rem;
+    color: white;
+}
+
+.introduction-sub-sub {
+    font-size: 1.5rem;
+    color: rgb(170, 170, 170);
+}
+
+@media (max-width: 1024px) {
+    .introduction-section {
+        height: 75vh;
+    }
+
+    .introduction-text {
+        font-size: 2.2rem;
+    }
+
+    .introduction-sub {
+        font-size: 1.5rem;
+    }
+
+    .introduction-sub-sub {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .introduction-section {
+        height: auto; 
+        padding-top: 50px; 
+    }
+
+    .introduction-text {
+        font-size: 2rem;
+        margin-bottom: 15px; 
+    }
+
+    .introduction-sub {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 20px; 
+    }
+
+    .introduction-sub-sub {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .introduction-text {
+        font-size: 1.8rem;
+    }
+
+    .introduction-sub {
+        font-size: 1.1rem;
+    }
+
+    .introduction-sub-sub {
+        font-size: 0.9rem;
+    }
+}
+
+.title-list {
+    text-transform: uppercase;
+    font-size: 46px;
+    margin-bottom: 32px;
+}
+
+.fixed-bg {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.fixed-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/Intro background/Narra x acacia.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+    transform: scale(1.1); 
+}
+
+.tree-list-content {
+    position: relative;
+    width: 100%;
+    background-image: url('../images/Intro background/Logo-Background-Opacity-5.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-position: 100%;
+    padding: 2rem;
+    border-radius: .5rem;
+    z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+    .fixed-bg::before {
+        background-size: cover;
+        background-position: center;
+        transform: scale(1);
+    }
+
+    .fixed-bg {
+        padding: 1.5rem;
+    }
+
+    .tree-list-content {
+        padding: 1rem;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .fixed-bg {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-list {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .tree-list-content {
+        padding: 1rem;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.scroll-navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: top 0.3s ease-in-out;
+    z-index: 1050;
+}
+
+
+.container-custom {
+  width: 100%;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container-custom {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container-custom {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container-custom {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container-custom {
+      max-width: 1140px; } }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container-custom, .container-sm {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container-custom, .container-sm, .container-md {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container-custom, .container-sm, .container-md, .container-lg {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container-custom, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1500px; } }
+
+
+
+.oleez-team-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.oleez-team-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.oleez-team-section img {
+    border: 4px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.oleez-team-section img:hover {
+    transform: scale(1.05);
+}
+
+.oleez-team-section h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.oleez-team-section p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.about-page {
+    background-color: #f5fcf6;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-weight: bold;
+    color: var(--Color_1_Seaweed-dark);
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 320px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid var(--Color_1_Seaweed);
+}
+
+.team-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--Color_1_Seaweed);
+}
+
+.team-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media (max-width: 992px) {
+    .biosoc .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .biosoc .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+}
+
+.contact-page {
+    padding: 40px 0;
+}
+
+.form-group label {
+    color: var(--Color_1_Seaweed-dark);
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-show-more {
+  position: relative;
+  background-color: #000;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.gallery-show-more::after {
+  content: attr(data-more-text);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+p, span, li, a, div, label, input {
+  font-family: var(--font-family-body);
+}
+
+
+.nav-link .arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown:hover .arrow {
+    transform: rotate(180deg); 
+}
+
+.btn-link {
+    font-weight: 400;
+    color: var(--Color_4_Highland);
+    text-decoration: none; 
+}
+.btn-link:hover {
+    color: var(--Color_4_Highland-dark);
+    text-decoration: underline; 
+}
+.btn-link:focus, .btn-link.focus {
+    text-decoration: underline;
+    box-shadow: none; 
+}
+.btn-link:disabled, .btn-link.disabled {
+    color: #6c757d;
+    pointer-events: none; 
+}
+
+
+
+.scientificname span, .genus span, .species span {
+    font-style: italic;
+}

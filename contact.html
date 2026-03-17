@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="assets/images/Logo/Logo.png">
+    <link rel="stylesheet" href="./assets/vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+</head>
+
+<body>
+    <div class="oleez-loader"></div>
+    <header class="oleez-header">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-shadow main-navbar">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo/MCU-P-horizontal 1.png" alt="McuLogo" draggable="false"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
+                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="oleezMainNav">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="forestry.html">Forest <span class="arrow">&#9662;</span></a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="Forestry/bed.html">BED</a>
+                            <a class="dropdown-item" href="Forestry/cgym.html">C-Gym</a>
+                            <a class="dropdown-item" href="Forestry/fdt.html">FDT Courtyard</a>
+                            <a class="dropdown-item" href="Forestry/me.html">Main Entrance</a>
+                            <a class="dropdown-item" href="Forestry/pgt.html">PGT</a>
+                            <a class="dropdown-item" href="Forestry/pl.html">Parking Lot</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scroll-navbar d-none wow fadeInDown" >
+            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo/MCU-P-horizontal 1.png" alt="McuLogo" draggable="false"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#oleezMainNav"
+                aria-controls="oleezMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="oleezMainNav">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="forestry.html">Forest <span class="arrow">&#9662;</span></a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="Forestry/bed.html">BED</a>
+                            <a class="dropdown-item" href="Forestry/cgym.html">C-Gym</a>
+                            <a class="dropdown-item" href="Forestry/fdt.html">FDT Courtyard</a>
+                            <a class="dropdown-item" href="Forestry/me.html">Main Entrance</a>
+                            <a class="dropdown-item" href="Forestry/pgt.html">PGT</a>
+                            <a class="dropdown-item" href="Forestry/pl.html">Parking Lot</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>        
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <h1 class="oleez-page-title wow fadeInUp">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0 pr-lg-5 wow fadeInLeft">
+                    <div class="embed-responsive embed-responsive-1by1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7719.8922104486755!2d120.986248!3d14.659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b429ca9143f7%3A0xd25cdebc345310e8!2sManila%20Central%20University!5e0!3m2!1sen!2sus!4v1733612106511!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 pl-lg-5 wow fadeInRight">
+                    <form action="POST" class="oleez-contact-form">
+                        <div class="form-group">
+                            <input type="text" class="oleez-input" id="fullName" name="fullName" required>
+                            <label for="fullName">*Full name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="oleez-input" id="fullName" name="email" required>
+                            <label for="email">*Email</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">*Message</label>
+                            <textarea name="message" id="message" rows="10" class="oleez-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="oleez-footer wow fadeInUp">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://mcu.edu.ph/"><img src="assets/images/MCU logo.png"  alt="McuLogo" draggable="false" class="footer-logo"></a>
+                        <a href="https://www.facebook.com/mcu.cassco"><img src="assets/images/CAS Logo.png"  alt="CAS" draggable="false" class="footer-logo"></a>
+                        <a href="https://www.facebook.com/MCUBioSoc"><img src="assets/images/Logo-Biology.PNG"  alt="Biology Logo" draggable="false" class="footer-logo"></a>
+                        <p class="footer-intro-text">MCU | College of Arts and Sciences | Biology | Computer Sciences</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 footer-widget-text">
+                                <h6 class="widget-title">INQUIRIES</h6>
+                                <p class="footer-social-links"><a href="mailto:mcu.cas.biosoc@gmail.com">mcu.cas.biosoc@gmail.com</a></p>
+                            </div>
+                            <div class="col-md-6 footer-widget-text">
+                                <h6 class="widget-title">ADDRESS</h6>
+                                <p class="footer-social-links"><a href="https://www.google.com/maps?ll=14.659,120.986248&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=15158235345735323880">Manila Central University, Epifanio de los Santos Ave, Morning Breeze Subdivision, Caloocan, 1400 Metro Manila</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="mb-md-0">©  2024, BioSoc & CSIT</p>
+                <p class="mb-0">All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/wowjs/wow.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/slick-carousel/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
