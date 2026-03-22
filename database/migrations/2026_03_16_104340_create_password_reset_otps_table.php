@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('otp');
             $table->timestamp('expires_at');
            // $table->string('ip_address')->nullable();   // ✅
-            $table->string('device')->nullable();        // ✅
+           // $table->string('device')->nullable();        // ✅
             $table->text('user_agent')->nullable();      // ✅
             $table->timestamps();
         });
