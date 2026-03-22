@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('firstname');
             $table->string('middle_initial', 2)->nullable();
             $table->string('lastname');
-            $table->string('email');
+            //ADD Unique for constraints
+            $table->string('email')->unique();
             $table->boolean('retain_same_person')->default(false);
             $table->string('image_path')->nullable();
             $table->timestamps();
