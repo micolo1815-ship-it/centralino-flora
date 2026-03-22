@@ -16,10 +16,11 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('middle_initial')->nullable();
             $table->string('last_name');
-            $table->string('email');
+            // ADDED ->unique() HERE TO FIX THE CONSTRAINT ERROR
+            $table->string('email')->unique(); 
             $table->string('position');
             $table->text('profile_image')->nullable();
-            $table->enum('status', ['active', 'inactive'])->default('active'); // Acc status
+            $table->enum('status', ['active', 'inactive'])->default('active'); 
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
