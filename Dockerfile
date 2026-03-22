@@ -35,5 +35,4 @@ RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache
 # Expose port and start
 # Note: Render Free Tier expects port 10000, so we match EXPOSE to your CMD port
 EXPOSE 10000
-# This will drop all tables and re-run every migration perfectly for Postgres
-CMD php artisan migrate:fresh --force && php artisan serve --host 0.0.0.0 --port 10000
+CMD php artisan migrate:fresh --seed --force && php artisan serve --host 0.0.0.0 --port 10000
