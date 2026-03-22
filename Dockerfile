@@ -9,10 +9,12 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     zip \
     unzip \
-    nginx
+    nginx \
+    libpq-dev  # Added this for PostgreSQL system support
 
 # Install PHP extensions
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+# Added pdo_pgsql to the list below
+RUN docker-php-ext-install pdo_mysql pdo_pgsql mbstring exif pcntl bcmath gd
 
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -31,5 +33,6 @@ RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache
 
 # Expose port and start
-EXPOSE 80
+# Note: Render Free Tier expects port 10000, so we match EXPOSE to your CMD port
+EXPOSE 10000
 CMD php artisan migrate --force && php artisan serve --host 0.0.0.0 --port 10000
