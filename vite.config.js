@@ -5,9 +5,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [
         laravel({
-            // Ensure these paths match your resources folder
-            input: ['resources/css/style.css', 'resources/js/app.js'],
-            refresh: true,
+            // Vite processes this file...
+            input: ['resources/css/style.css'],
+            // ...and puts it in public/build/assets/style.css
         }),
         tailwindcss(),
     ],
