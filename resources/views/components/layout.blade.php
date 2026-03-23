@@ -7,19 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Centralino Flora</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ asset('images/Logo/Logo.png') }}">
 
-    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('build/assets/style.css') }}">
+
     <link rel="stylesheet" href="{{ asset('vendors/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/fancybox/jquery.fancybox.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendors/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/slick-carousel/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/slick-carousel/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main-style.css') }}">
 
-    <!-- JS (head) -->
     <script src="{{ asset('vendors/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('js/loader.js') }}" defer></script>
 </head>
