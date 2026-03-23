@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap");
-
+@import "tailwindcss";
 :root {
   --Color_1_Seaweed: #2E4A1B;
   --Color_1_Seaweed-dark: #294218;
