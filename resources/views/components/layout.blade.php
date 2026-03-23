@@ -9,7 +9,7 @@
 
     <link rel="icon" type="image/png" href="{{ asset('images/Logo/Logo.png') }}">
 
-    <link rel="stylesheet" href="{{ asset('build/assets/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/style.css') }}">
 
     <link rel="stylesheet" href="{{ asset('vendors/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/fancybox/jquery.fancybox.min.css') }}">
